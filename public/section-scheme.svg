@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" role="img" aria-labelledby="title desc">
+  <title id="title">Esquema de sección urbana</title>
+  <desc id="desc">Diagrama arquitectónico de una calle peatonal con edificios, árboles y un espacio público central.</desc>
+  <rect width="620" height="300" fill="#fff"/>
+  <g fill="none" stroke="#66717d" stroke-width="2">
+    <path d="M32 218H588M48 218V108h67v110m-62-97h56m-56 22h56m-56 22h56m-56 22h56m-41-66v117m27-117v117"/>
+    <path d="M506 218V95h72v123m-66-108h60m-60 22h60m-60 22h60m-60 22h60m-44-66v121m29-121v121"/>
+    <path d="M115 218v-25h391v25M153 193v-22h74v22m8 0v-36h141v36m10 0v-22h70v22"/>
+    <path d="M254 157v-19h40v19m-18-19v-18m111 36v-26h32v26M271 120h86m-76-5h66m-55-6h44" stroke="#a5adb5" stroke-width="1.5"/>
+    <path d="M125 237h372m-342 0v11m31-11v7m31-7v11m31-11v7m31-7v11m31-11v7m31-7v11m31-11v7m31-7v11m31-11v7m31-7v11" stroke="#73808c" stroke-width="1.2"/>
+    <path d="M125 253h372m-5-4 5 4-5 4m-362-4-5-4 5 4" stroke="#73808c" stroke-width="1.2"/>
+    <path d="M210 270h198m-5-4 5 4-5 4m-188-4-5-4 5 4" stroke="#73808c" stroke-width="1.2"/>
+  </g>
+  <g fill="#9caf8c" stroke="#758a67" stroke-width="1.5">
+    <circle cx="83" cy="80" r="27"/><circle cx="99" cy="68" r="21"/><circle cx="68" cy="65" r="18"/>
+    <circle cx="551" cy="68" r="25"/><circle cx="570" cy="81" r="20"/><circle cx="536" cy="51" r="18"/>
+    <circle cx="180" cy="116" r="19"/><circle cx="195" cy="109" r="16"/>
+  </g>
+  <g stroke="#776c58" stroke-width="3"><path d="M82 107v86M555 95v98M188 134v37"/></g>
+  <g fill="#58636e" font-family="Arial,sans-serif" font-size="12">
+    <text x="52" y="96">VIVIENDA</text><text x="265" y="98">ESPACIO PÚBLICO</text><text x="520" y="83">VIVIENDA</text>
+    <text x="278" y="289">SECCIÓN A–A</text><text x="248" y="266">12.00 m</text><text x="300" y="234">3.00 m</text>
+  </g>
+  <g fill="#4e5b67"><circle cx="309" cy="203" r="4"/><path d="M307 208h4l4 14h-12zM344 203h8v4h-8zm2 4h4v10h-4zm40-3h7v3h-7zm1 3h5v12h-5z"/></g>
+  <path d="M22 219h576" stroke="#334b5d" stroke-width="3"/>
+</svg>
