@@ -94,13 +94,16 @@ const photos = {
   street: '/esquemaSeccionesbrother.jpeg',
   aerial: '/Zonificacion.jpeg',
   sectionDiagram: '/esquemaSecciones.jpeg',
-  logo:'/Logo.jpeg'
+  logo:'/Logo.jpeg',
+  plaza2:'/RutaClasica2.jpeg',
+  hospital2:'/CentrodeArtes2.jpeg',
 };
 
 const projects = [
   {
     href: '/proyectos/ruta-clasica',
     image: photos.plaza,
+    image1:photos.plaza2,
     title: 'Ruta Clásica | Proyecto académico de hospedaje y glamping',
     tags: ['Diseño urbano', 'Turismo', 'Sustentabilidad'],
     description: 'Proyecto de hospedaje experiencial en Tecate, Baja California, que combina la identidad de la región con la arquitectura y la historia automotriz de las décadas de 1950 y 1960. La propuesta integra cabañas y unidades de glamping en un entorno semidesértico, utilizando carrocerías de automóviles clásicos recuperadas como elementos arquitectónicos distintivos, junto con materiales como concreto, acero corten, madera y piedra local.',
@@ -111,6 +114,7 @@ const projects = [
   {
     href: '/proyectos/prisma',
     image: photos.hospital,
+    image1:photos.hospital2,
     title: 'Centro de Artes Prisma | Proyecto académico de equipamiento cultural',
     tags: ['Centro de artes', 'Comunidad', 'Cultura'],
     description: 'Propuesta arquitectónica de un centro de artes orientado a promover la expresión artística, el aprendizaje y la convivencia comunitaria. El proyecto busca integrar espacios flexibles para talleres, exposiciones y actividades culturales, mediante una distribución funcional que favorezca la accesibilidad, la interacción entre los usuarios y la relación del edificio con su entorno.',
@@ -204,7 +208,7 @@ function PortfolioPage() {
   </View></ScrollView>;
 }
 
-function Project({ href, image, title, tags, description, skills }) {
+function Project({ href, image,image1, title, tags, description, skills }) {
   return <Pressable accessibilityRole="link" accessibilityLabel={`Abrir proyecto: ${title}`} onPress={event => {
     const target = event?.nativeEvent?.target ?? event?.target;
     if (target?.closest?.('[data-zoomable-image="true"]')) return;
@@ -226,7 +230,7 @@ function ProjectDetail({ project }) {
       <View className="detail-meta"><View><Text className="meta-label">Ubicación</Text><Text className="meta-value">{project.location}</Text></View><View><Text className="meta-label">Enfoque</Text><Text className="meta-value">{project.category}</Text></View></View>
       <Text className="detail-section-title">Concepto</Text><Text className="detail-paragraph">{project.description}</Text>
       <Text className="detail-section-title">Habilidades aplicadas</Text><Text className="detail-paragraph">{project.skills}</Text>
-      <View className="detail-gallery">{[project.image, photos.street].map((image, index) => <Image source={{ uri: image }} className="gallery-image" accessibilityLabel={`${project.title}, vista ${index + 1}`} key={`${image}-${index}`}/>)}</View>
+      <View className="detail-gallery">{[project.image, project.image1].map((image, index) => <Image source={{ uri: image }} className="gallery-image" accessibilityLabel={`${project.title}, vista ${index + 1}`} key={`${image}-${index}`}/>)}</View>
       <View className="detail-note"><Text className="detail-note-title">Arquitectura con propósito</Text><Text className="detail-paragraph">Diseñar espacios que conecten a las personas con su entorno y mejoren su calidad de vida.</Text></View>
     </View>
   </View></DetailShell>;
